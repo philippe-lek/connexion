@@ -1,0 +1,73 @@
+body {
+  font-family: Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background: url(fond-ecran.jpg);
+  margin: 0;
+  padding: 10vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  border: solid;
+  border-radius: 10px;
+  box-shadow: 2px 2px grey;
+  background-color: white;
+  opacity: 0.9;
+  color: black;
+  padding: 1em 3em;
+  width: 40vw;
+}
+.button-container {
+  margin: 1em 0;
+  display: flex;
+  justify-content: center;
+}
+button {
+  padding: 0.5em 0.8em;
+  border-radius: 5px;
+  background-color: darksalmon;
+}
+button:hover {
+  background-color: brown;
+}
+.link-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.link-container a {
+  width: 100%;
+  margin:  3em 0em;
+  text-align: center;
+  color: black;
+}
+.link-container a:hover {
+  color: blue;
+}
+.inner-container {
+  display: flex;
+  margin: 0.5em 0em;
+}
+.inner-container label {
+  flex: 1;
+}
+.inner-container input {
+  flex: 1;
+}
+.inner-container span {
+  flex: 1;
+}
+.inner-container select {
+  flex: 1;
+}
+.marge {
+  margin: 0.5em 0em;
+}
+textarea {
+  width: 70%;
+}
+.field {
+  border: solid 1px;
+}

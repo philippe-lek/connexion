@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="connexion.css" />
+    <title>Inscription</title>
+  </head>
+  <body>
+    <form action="/connexion.html">
+      <section class="container">
+        <h1>Inscription</h1>
+        <section class="inner-container">
+          <label for="name">Login :</label>
+          <input type="text" id="name" name="user_name" required />
+        </section>
+        <section class="inner-container">
+          <label for="psw">Mot de passe :</label>
+          <input type="password" name="psw" required />
+        </section>
+        <section class="inner-container">
+          <label for="psw">Confirmation mot de passe :</label>
+          <input type="password" name="psw" required />
+        </section>
+        <section class="inner-container">
+          <label for="bday">Date de naissance :</label>
+          <input type="date" id="bday" name="bday" required/>
+        </section>
+        <section class="inner-container">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="user_name" required />
+        </section>
+        <section class="inner-container">
+          <label for="name">Prenom :</label>
+          <input type="text" id="name" name="user_name" required />
+        </section>
+        <section class="inner-container">
+          <label for="email">Adresse email:</label>
+          <input type="email" id="email" required />
+        </section>
+        <section class="inner-container">
+          <span>Sexe :</span>
+          <span>
+            <input type="radio" name="sex" value="male" checked /> Male
+            <input type="radio" name="sex" value="female" /> Female
+          </span>
+        </section>
+        <section class="inner-container">
+          <label for="etude-select">Niveau d'étude:</label>
+          <select name="etude" id="etude-select">
+            <option value="bac">Niveau Bac</option>
+            <option value="bac+2">Niveau Bac+2</option>
+            <option value="bac+3">Niveau Bac+3</option>
+            <option value="bac+5">Niveau Bac+5</option>
+          </select>
+        </section>
+        <section class="inner-container">
+          <label for="phone">Tel:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{10}"
+            required
+          />
+        </section>
+        <section class="inner-container">
+          <label for="presentation">Présentation</label>
+          <textarea id="presentation"></textarea>
+        </section>
+        <section>
+          <fieldset class="field">
+            <legend>Hobbies</legend>
+            <label for="Informatique"> Informatique</label>
+            <input
+              type="checkbox"
+              name="hobbies"
+              value="Informatique"
+              id="info"
+            />
+            <label for="sport"> Sport</label>
+            <input type="checkbox" name="hobbies" value="Sport" id="sport" />
+            <label for="voyage"> Voyages</label>
+            <input type="checkbox" name="hobbies" value="Voyages" id="voyage" />
+            <label for="musique"> Musique</label>
+            <input
+              type="checkbox"
+              name="hobbies"
+              value="Musique"
+              id="musique"
+            />
+            <label for="autres"> Autres</label>
+            <input type="checkbox" name="hobbies" value="Autres" id="autres" />
+          </fieldset>
+        </section>
+        <section class="button-container">
+          <button type="submit">Valider</button>
+        </section>
+      </section>
+    </form>
+  </body>
+</html>
